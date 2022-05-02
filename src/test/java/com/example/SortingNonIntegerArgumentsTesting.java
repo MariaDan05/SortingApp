@@ -9,12 +9,12 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class SortingNonIntegerArgumentsTesting {
-    App m = new App();
+    private Sorting sorting = new Sorting();
 
-    private String[] arr;
+    private String[] actual;
 
-    public SortingNonIntegerArgumentsTesting(String[] arr) {
-        this.arr = arr;
+    public SortingNonIntegerArgumentsTesting(String[] actual) {
+        this.actual = actual;
     }
 
     @Parameterized.Parameters
@@ -29,7 +29,7 @@ public class SortingNonIntegerArgumentsTesting {
 
     @Test(expected = IllegalArgumentException.class)
     public void testNoRootsCase() {
-        m.sort(arr);
+        sorting.sort(actual);
     }
 
 }

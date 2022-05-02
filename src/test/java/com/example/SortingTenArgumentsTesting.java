@@ -11,13 +11,13 @@ import static org.junit.Assert.assertArrayEquals;
 
 @RunWith(Parameterized.class)
 public class SortingTenArgumentsTesting {
-    App m = new App();
+    private Sorting sorting = new Sorting();
 
-    private String[] arr;
+    private String[] actual;
     private String[] expected;
 
-    public SortingTenArgumentsTesting(String[] arr, String[] expected) {
-        this.arr = arr;
+    public SortingTenArgumentsTesting(String[] actual, String[] expected) {
+        this.actual = actual;
         this.expected = expected;
     }
 
@@ -33,8 +33,8 @@ public class SortingTenArgumentsTesting {
 
     @Test
     public void testNoRootsCase() {
-        m.sort(arr);
-        assertArrayEquals(expected, arr);
+        sorting.sort(actual);
+        assertArrayEquals(expected, actual);
     }
 
 }

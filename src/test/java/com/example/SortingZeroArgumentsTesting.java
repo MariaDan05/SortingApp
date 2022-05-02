@@ -11,12 +11,12 @@ import static org.junit.Assert.assertArrayEquals;
 
 @RunWith(Parameterized.class)
 public class SortingZeroArgumentsTesting {
-    App m = new App();
+    private Sorting sorting = new Sorting();
 
-    private String[] arr;
+    private String[] actual;
 
-    public SortingZeroArgumentsTesting(String[] arr) {
-        this.arr = arr;
+    public SortingZeroArgumentsTesting(String[] actual) {
+        this.actual = actual;
     }
 
     @Parameterized.Parameters
@@ -29,8 +29,8 @@ public class SortingZeroArgumentsTesting {
 
     @Test
     public void testNoRootsCase() {
-        m.sort(arr);
-        assertArrayEquals(new String[] {}, arr);
+        sorting.sort(actual);
+        assertArrayEquals(new String[] {}, actual);
     }
 
 }

@@ -11,13 +11,13 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class SortingSingleArgumentTesting {
-    App m = new App();
+    private Sorting sorting = new Sorting();
 
-    private String[] arr;
+    private String[] actual;
     private String expected;
 
-    public SortingSingleArgumentTesting(String[] arr, String expected) {
-        this.arr = arr;
+    public SortingSingleArgumentTesting(String[] actual, String expected) {
+        this.actual = actual;
         this.expected = expected;
     }
 
@@ -34,8 +34,8 @@ public class SortingSingleArgumentTesting {
 
     @Test
     public void testNoRootsCase() {
-        m.sort(arr);
-        assertEquals(expected, arr[0]);
+        sorting.sort(actual);
+        assertEquals(expected, actual[0]);
     }
 
 }
