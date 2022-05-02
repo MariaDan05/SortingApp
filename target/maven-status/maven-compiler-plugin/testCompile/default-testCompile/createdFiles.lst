@@ -1,0 +1,6 @@
+com\example\SortingTenArgumentsTesting.class
+com\example\SortingSingleArgumentTesting.class
+com\example\SortingTest.class
+com\example\SortingZeroArgumentsTesting.class
+com\example\SortingMoreThanTenArgumentsTesting.class
+com\example\SortingNonIntegerArgumentsTesting.class
