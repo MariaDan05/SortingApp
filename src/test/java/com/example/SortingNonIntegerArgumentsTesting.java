@@ -28,7 +28,7 @@ public class SortingNonIntegerArgumentsTesting {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testNoRootsCase() {
+    public void testNonIntegerArgumentsCase() {
         sorting.sort(actual);
     }
 

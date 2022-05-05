@@ -32,7 +32,7 @@ public class SortingTenArgumentsTesting {
     }
 
     @Test
-    public void testNoRootsCase() {
+    public void testTenArgumentsCase() {
         sorting.sort(actual);
         assertArrayEquals(expected, actual);
     }

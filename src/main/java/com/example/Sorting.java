@@ -10,6 +10,10 @@ public class Sorting {
      */
     public void sort(String[] stringArrayToSort) {
 
+        if(stringArrayToSort == null) {
+            throw new IllegalArgumentException("You passed null, please try again");
+        }
+
         int [] intArrayToSort = new int [stringArrayToSort.length];
 
         for(int i = 0; i < intArrayToSort.length; i++) {

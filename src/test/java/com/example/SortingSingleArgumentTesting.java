@@ -33,7 +33,7 @@ public class SortingSingleArgumentTesting {
     }
 
     @Test
-    public void testNoRootsCase() {
+    public void testSingleArgumentCase() {
         sorting.sort(actual);
         assertEquals(expected, actual[0]);
     }

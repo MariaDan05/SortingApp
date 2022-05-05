@@ -28,7 +28,7 @@ public class SortingMoreThanTenArgumentsTesting {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void testNoRootsCase() {
+    public void testMoreThanTenArgumentsCase() {
         sorting.sort(actual);
     }
 

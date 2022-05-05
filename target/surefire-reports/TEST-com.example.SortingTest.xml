@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.SortingTest" time="0.033" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.SortingTest" time="0.034" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\mariy\AppData\Local\Temp\surefire7583935238248830762\surefirebooter7455149263064851077.jar C:\Users\mariy\AppData\Local\Temp\surefire7583935238248830762 2022-05-02T20-36-28_799-jvmRun1 surefire3323319348052469153tmp surefire_06586108780549834987tmp"/>
+    <property name="sun.java.command" value="C:\Users\mariy\AppData\Local\Temp\surefire5738981403727940473\surefirebooter4168755826669019346.jar C:\Users\mariy\AppData\Local\Temp\surefire5738981403727940473 2022-05-05T17-29-37_430-jvmRun1 surefire1343527578990406656tmp surefire_02855919142572003236tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\mariy\SortingApp\target\test-classes;C:\Users\mariy\SortingApp\target\classes;C:\Users\mariy\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\mariy\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\mariy"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\mariy\AppData\Local\Temp\surefire7583935238248830762\surefirebooter7455149263064851077.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mariy\AppData\Local\Temp\surefire5738981403727940473\surefirebooter4168755826669019346.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,8 +62,9 @@
     <property name="java.class.version" value="52.0"/>
   </properties>
   <testcase name="testMoreThan10Arguments" classname="com.example.SortingTest" time="0.001"/>
+  <testcase name="testNullCase" classname="com.example.SortingTest" time="0"/>
   <testcase name="test10Arguments" classname="com.example.SortingTest" time="0"/>
   <testcase name="testEmptyCase" classname="com.example.SortingTest" time="0"/>
-  <testcase name="testSingleElementArrayCase" classname="com.example.SortingTest" time="0.001"/>
+  <testcase name="testSingleElementArrayCase" classname="com.example.SortingTest" time="0"/>
   <testcase name="testNonIntegerArguments" classname="com.example.SortingTest" time="0"/>
 </testsuite>

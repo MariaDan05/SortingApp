@@ -8,6 +8,11 @@ import static org.junit.Assert.assertEquals;
 public class SortingTest {
     private Sorting sorting = new Sorting();
 
+    @Test (expected = IllegalArgumentException.class)
+    public void testNullCase() {
+        sorting.sort(null);
+    }
+
     @Test
     public void testEmptyCase() {
         sorting.sort(new String[]{});
@@ -30,13 +35,13 @@ public class SortingTest {
         assertArrayEquals(expected, actual);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test (expected = IllegalArgumentException.class)
     public void testMoreThan10Arguments() {
         String[] actual = { "5", "6", "3", "2", "1", "-1", "-2", "-10", "4", "10", "11", "3", "6", "7" };
         sorting.sort(actual);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test (expected = IllegalArgumentException.class)
     public void testNonIntegerArguments() {
         String[] actual = { "a", "b", "c", "err+r%%" };
         sorting.sort(actual);

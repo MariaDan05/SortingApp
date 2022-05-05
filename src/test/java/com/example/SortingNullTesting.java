@@ -7,30 +7,29 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.junit.Assert.assertArrayEquals;
-
 @RunWith(Parameterized.class)
-public class SortingZeroArgumentsTesting {
+public class SortingNullTesting {
     private Sorting sorting = new Sorting();
 
     private String[] actual;
 
-    public SortingZeroArgumentsTesting(String[] actual) {
+    public SortingNullTesting(String[] actual) {
         this.actual = actual;
     }
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
-                { new String[] {} },
-                { new String[] {} }
+                {null},
+                {null}
         });
     }
 
-    @Test
-    public void testZeroArgumentsCase() {
+    @Test(expected = IllegalArgumentException.class)
+    public void testNullCase() {
         sorting.sort(actual);
-        assertArrayEquals(new String[] {}, actual);
     }
 
+
 }
+
